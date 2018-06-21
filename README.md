@@ -1,7 +1,4 @@
 # CustomLoadingBar
 
 
-How to use:
-
-
 
