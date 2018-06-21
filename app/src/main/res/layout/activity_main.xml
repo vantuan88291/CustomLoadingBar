@@ -19,6 +19,7 @@
         android:background="#c4535151"
         android:visibility="visible"
         app:loadingText="Loading ..."
+        app:loadingBarColor="#fff"
         app:loadingTextColor="#fff"/>
 
 

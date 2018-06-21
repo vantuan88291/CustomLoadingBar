@@ -5,6 +5,7 @@
 
         <attr name="loadingText" format="string" />
         <attr name="loadingTextColor" format="reference|color" />
+        <attr name="loadingBarColor" format="reference|color" />
 
     </declare-styleable>
 </resources>
