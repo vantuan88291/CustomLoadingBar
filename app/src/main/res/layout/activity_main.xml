@@ -6,25 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
 
-
     <com.tuan88291.library.CustomLoadingBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="#c4535151"
         android:visibility="visible"
         app:loadingText="Loading ..."
         app:boxLoading="true"
         app:loadingBarColor="@color/colorAccent"
         app:loadingTextColor="@color/colorPrimary" />
 
-
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

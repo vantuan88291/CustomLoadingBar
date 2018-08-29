@@ -56,7 +56,7 @@ public class CustomLoadingBar extends FrameLayout{
         this.mLoadtext.setTextColor(a.getColor(R.styleable.CustomLoadingbar_loadingTextColor, ContextCompat.getColor(context, R.color.colorAccent)));
 
         if(mcheckBox){
-            mBoxLoading.setBackgroundColor(Color.WHITE);
+            mBoxLoading.setBackgroundResource(R.drawable.cicrleconor);
         }else{
             mBoxLoading.setBackgroundColor(Color.TRANSPARENT);
         }

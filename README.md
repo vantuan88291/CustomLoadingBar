@@ -3,8 +3,7 @@
 You can custom your own loading bar, this library just using ProgressBar and some layout basic.
 
 ## Overview
-![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr1.png)
-![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr2.png)
+![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr3.png)![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr2.png)
 ## Features
 - Custom loading text and color
 - Custom color of loading line
@@ -16,17 +15,14 @@ add maven
 	
 Add the dependency
 
-`implementation 'com.github.vantuan88291:CustomLoadingBar:1.2'`
+`implementation 'com.github.vantuan88291:CustomLoadingBar:1.3'`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
 ```xml
-<com.tuan88291.customloadingbar.CustomLoadingBar
+<com.tuan88291.library.CustomLoadingBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="#c4535151"
         android:visibility="visible"
         app:loadingText="Loading ..."
         app:boxLoading="true"
