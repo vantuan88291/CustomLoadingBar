@@ -1,4 +1,4 @@
-package com.tuan88291.customloadingbar;
+package com.tuan88291.library;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

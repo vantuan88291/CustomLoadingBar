@@ -13,7 +13,7 @@
 
 
 
-    <com.tuan88291.customloadingbar.CustomLoadingBar
+    <com.tuan88291.library.CustomLoadingBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
@@ -23,7 +23,8 @@
         app:loadingText="Loading ..."
         app:boxLoading="true"
         app:loadingBarColor="@color/colorAccent"
-        app:loadingTextColor="@color/colorPrimary"/>
+        app:loadingTextColor="@color/colorPrimary" />
+
 
 
 </android.support.constraint.ConstraintLayout>
