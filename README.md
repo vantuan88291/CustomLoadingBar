@@ -9,7 +9,20 @@ You can custom your own loading bar, this library just using ProgressBar and som
 - Custom color of loading line
 - Custom loading box
 ### To use font resources add support library to your dependencies:
-////////
+add maven
+
+`allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}`
+	
+Add the dependency
+
+`dependencies {
+	        implementation 'com.github.vantuan88291:CustomLoadingBar:1.0'
+	}`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
