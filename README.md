@@ -16,7 +16,7 @@ add maven
 	
 Add the dependency
 
-`implementation 'com.github.vantuan88291:CustomLoadingBar:1.0'`
+`implementation 'com.github.vantuan88291:CustomLoadingBar:1.2'`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
