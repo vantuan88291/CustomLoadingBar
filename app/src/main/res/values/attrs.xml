@@ -2,10 +2,9 @@
 <resources>
 
     <declare-styleable name="CustomLoadingbar">
-
         <attr name="loadingText" format="string" />
         <attr name="loadingTextColor" format="reference|color" />
         <attr name="loadingBarColor" format="reference|color" />
-
+        <attr name="boxLoading" format="boolean" />
     </declare-styleable>
 </resources>

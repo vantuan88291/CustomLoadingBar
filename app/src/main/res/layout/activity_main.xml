@@ -21,8 +21,9 @@
         android:background="#c4535151"
         android:visibility="visible"
         app:loadingText="Loading ..."
-        app:loadingBarColor="#fff"
-        app:loadingTextColor="#fff"/>
+        app:boxLoading="true"
+        app:loadingBarColor="@color/colorAccent"
+        app:loadingTextColor="@color/colorPrimary"/>
 
 
 </android.support.constraint.ConstraintLayout>
