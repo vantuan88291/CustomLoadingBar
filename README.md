@@ -1,4 +1,5 @@
 # CustomLoadingBar
+[![](https://jitpack.io/v/vantuan88291/CustomLoadingBar.svg)](https://jitpack.io/#vantuan88291/CustomLoadingBar)
 You can custom your own loading bar, this library just using ProgressBar and some layout basic.
 
 ## Overview
