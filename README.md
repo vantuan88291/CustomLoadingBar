@@ -13,7 +13,7 @@ You can custom your own loading bar, this library just using ProgressBar and som
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
-<com.tuan88291.customloadingbar.CustomLoadingBar
+```<com.tuan88291.customloadingbar.CustomLoadingBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
@@ -23,7 +23,8 @@ You can custom your own loading bar, this library just using ProgressBar and som
         app:loadingText="Loading ..."
         app:boxLoading="true"
         app:loadingBarColor="@color/colorAccent"
-        app:loadingTextColor="@color/colorPrimary"/>
+        app:loadingTextColor="@color/colorPrimary"/>```
+        
        
 ####  Supported Attributes
  XML Attribute            | Description  |
