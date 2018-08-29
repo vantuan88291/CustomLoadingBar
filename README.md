@@ -9,12 +9,12 @@ You can custom your own loading bar, this library just using ProgressBar and som
 - Custom color of loading line
 - Custom loading box
 ### To use font resources add support library to your dependencies:
-coming soon
+////////
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
-
-`<com.tuan88291.customloadingbar.CustomLoadingBar
+```xml
+<com.tuan88291.customloadingbar.CustomLoadingBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
@@ -24,11 +24,12 @@ coming soon
         app:loadingText="Loading ..."
         app:boxLoading="true"
         app:loadingBarColor="@color/colorAccent"
-        app:loadingTextColor="@color/colorPrimary"/>`
-       
-        
-   
-### Supported Attributes
+        app:loadingTextColor="@color/colorPrimary" />
+```
+      
+      
+      
+####  Supported Attributes
  XML Attribute            | Description  |
 | ------------- | -----:|
 | app:loadingText      | Text of the loading |
