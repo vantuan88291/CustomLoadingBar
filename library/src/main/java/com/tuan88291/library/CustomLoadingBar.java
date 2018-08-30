@@ -49,14 +49,13 @@ public class CustomLoadingBar extends FrameLayout{
         this.mLoading = findViewById(R.id.loading);
         this.mBoxLoading = findViewById(R.id.boxLoading);
 
-
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomLoadingbar);
         String mtext = a.getString(R.styleable.CustomLoadingbar_loadingText);
         boolean mcheckBox = a.getBoolean(R.styleable.CustomLoadingbar_boxLoading, false);
         this.mLoadtext.setTextColor(a.getColor(R.styleable.CustomLoadingbar_loadingTextColor, ContextCompat.getColor(context, R.color.colorAccent)));
 
         if(mcheckBox){
-            mBoxLoading.setBackgroundResource(R.drawable.cicrleconor);
+            mBoxLoading.setBackgroundResource(R.drawable.cicrlecornor);
         }else{
             mBoxLoading.setBackgroundColor(Color.TRANSPARENT);
         }
