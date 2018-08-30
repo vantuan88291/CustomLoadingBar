@@ -23,7 +23,7 @@
         android:visibility="visible"
         app:loadingText="Loading ..."
         app:isboxLoading="true"
-        app:isloadingCircular="true"
+        app:isloadingCircular="false"
         app:loadingBarColor="@color/colorAccent"
         app:loadingTextColor="@color/colorPrimary" />
 
