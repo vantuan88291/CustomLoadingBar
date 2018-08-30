@@ -11,9 +11,16 @@ You can custom your own loading bar, this library just using ProgressBar and som
 - Custom color of loading line
 - Custom loading box
 ### To use font resources add support library to your dependencies:
-add maven
+add maven in to your build.gradle project
 
-`maven { url 'https://jitpack.io' }`
+```gradle
+allprojects {
+   repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+   }
+}
+```
 	
 Add the dependency
 
