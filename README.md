@@ -5,6 +5,7 @@ You can custom your own loading bar, this library just using ProgressBar and som
 
 ## Overview
 ![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr3.png)![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr1.png)
+![CustomLoadingBar Android](https://github.com/vantuan88291/CustomLoadingBar/raw/master/scr4.png)
 ## Features
 - Custom loading text and color
 - Custom color of loading line
@@ -16,7 +17,7 @@ add maven
 	
 Add the dependency
 
-`implementation 'com.github.vantuan88291:CustomLoadingBar:1.4'`
+`implementation 'com.github.vantuan88291:CustomLoadingBar:1.5'`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
@@ -26,7 +27,8 @@ Add the dependency
         android:layout_height="match_parent"
         android:visibility="visible"
         app:loadingText="Loading ..."
-        app:boxLoading="true"
+        app:isboxLoading="true"
+        app:isloadingCircular="false"
         app:loadingBarColor="@color/colorAccent"
         app:loadingTextColor="@color/colorPrimary" />
 ```
@@ -37,6 +39,7 @@ Add the dependency
  XML Attribute            | Description  |
 | ------------- | -----:|
 | app:loadingText      | Text of the loading |
-| app:boxLoading     | boolean to show or hide box |
+| app:isboxLoading     | boolean to show or hide box |
 | app:loadingBarColor | color of the loading bar |
 | app:loadingTextColor | color of the text|
+| app:isloadingCircular | boolean to show Circular or Horizontal loading|

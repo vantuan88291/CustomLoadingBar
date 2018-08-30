@@ -22,7 +22,8 @@
         android:layout_height="match_parent"
         android:visibility="visible"
         app:loadingText="Loading ..."
-        app:boxLoading="true"
+        app:isboxLoading="true"
+        app:isloadingCircular="true"
         app:loadingBarColor="@color/colorAccent"
         app:loadingTextColor="@color/colorPrimary" />
 

@@ -20,6 +20,7 @@ public class CustomLoadingBar extends FrameLayout{
 
     private TextView mLoadtext;
     private ProgressBar mLoading;
+    private ProgressBar mloadingCircular;
     private RelativeLayout mBoxLoading;
 
     public CustomLoadingBar(@NonNull Context context) {
@@ -47,11 +48,13 @@ public class CustomLoadingBar extends FrameLayout{
         LayoutInflater.from(context).inflate(R.layout.custom_loading, this, true);
         this.mLoadtext = findViewById(R.id.textload);
         this.mLoading = findViewById(R.id.loading);
+        this.mloadingCircular = findViewById(R.id.loadingCircular);
         this.mBoxLoading = findViewById(R.id.boxLoading);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomLoadingbar);
         String mtext = a.getString(R.styleable.CustomLoadingbar_loadingText);
-        boolean mcheckBox = a.getBoolean(R.styleable.CustomLoadingbar_boxLoading, false);
+        boolean mcheckBox = a.getBoolean(R.styleable.CustomLoadingbar_isboxLoading, false);
+        boolean mcheckBoxCircular = a.getBoolean(R.styleable.CustomLoadingbar_isloadingCircular, false);
         this.mLoadtext.setTextColor(a.getColor(R.styleable.CustomLoadingbar_loadingTextColor, ContextCompat.getColor(context, R.color.colorAccent)));
 
         if(mcheckBox){
@@ -60,6 +63,13 @@ public class CustomLoadingBar extends FrameLayout{
             mBoxLoading.setBackgroundColor(Color.TRANSPARENT);
         }
 
+        if (mcheckBoxCircular){
+            mLoading.setVisibility(GONE);
+            mloadingCircular.setVisibility(VISIBLE);
+        }else{
+            mLoading.setVisibility(VISIBLE);
+            mloadingCircular.setVisibility(GONE);
+        }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ColorStateList colorLoad = ColorStateList.valueOf(a.getColor(R.styleable.CustomLoadingbar_loadingBarColor, ContextCompat.getColor(context, R.color.colorAccent)));
