@@ -8,10 +8,8 @@
 
 
     <padding
-        android:left="30dp"
-        android:top="30dp"
-        android:right="30dp"
-        android:bottom="30dp" >
+        android:top="@dimen/_20sdp"
+        android:bottom="@dimen/_20sdp" >
     </padding>
 
     <corners

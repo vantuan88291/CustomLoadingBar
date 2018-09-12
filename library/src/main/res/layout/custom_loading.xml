@@ -14,10 +14,10 @@
 
         <RelativeLayout
             android:id="@+id/boxLoading"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp">
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingRight="@dimen/_50sdp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
