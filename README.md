@@ -24,7 +24,7 @@ allprojects {
 	
 Add the dependency
 
-`implementation 'com.github.vantuan88291:CustomLoadingBar:1.5'`
+`implementation 'com.github.vantuan88291:CustomLoadingBar:1.6'`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
