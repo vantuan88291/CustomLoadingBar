@@ -9,7 +9,9 @@
 
     <padding
         android:top="@dimen/_20sdp"
-        android:bottom="@dimen/_20sdp" >
+        android:bottom="@dimen/_20sdp"
+        android:right="@dimen/_50sdp"
+        android:left="@dimen/_50sdp">
     </padding>
 
     <corners
