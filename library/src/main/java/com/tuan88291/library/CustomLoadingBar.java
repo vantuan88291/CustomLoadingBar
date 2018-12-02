@@ -11,12 +11,11 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class CustomLoadingBar extends FrameLayout{
+public class CustomLoadingBar extends RelativeLayout {
 
     private TextView mLoadtext;
     private ProgressBar mLoading;
