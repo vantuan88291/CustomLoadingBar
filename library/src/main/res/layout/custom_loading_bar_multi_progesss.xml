@@ -13,7 +13,7 @@
         android:layout_centerInParent="true">
 
         <RelativeLayout
-            android:id="@+id/boxLoading"
+            android:id="@+id/boxLoadingBorderWhite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <LinearLayout
@@ -22,19 +22,19 @@
                 android:layout_centerHorizontal="true"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/textload"
+                    android:id="@+id/textloadForLoading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="loading..."/>
 
                 <ProgressBar
-                    android:id="@+id/loading"
+                    android:id="@+id/loadingHorizontals"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:indeterminate="true" />
                 <ProgressBar
-                    android:id="@+id/loadingCircular"
+                    android:id="@+id/loadingCircularbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:visibility="gone"/>

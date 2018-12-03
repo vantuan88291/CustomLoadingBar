@@ -44,11 +44,11 @@ public class CustomLoadingBar extends RelativeLayout {
     }
 
     private void setUpView(Context context, AttributeSet attrs){
-        LayoutInflater.from(context).inflate(R.layout.custom_loading, this, true);
-        this.mLoadtext = findViewById(R.id.textload);
-        this.mLoading = findViewById(R.id.loading);
-        this.mloadingCircular = findViewById(R.id.loadingCircular);
-        this.mBoxLoading = findViewById(R.id.boxLoading);
+        LayoutInflater.from(context).inflate(R.layout.custom_loading_bar_multi_progesss, this, true);
+        this.mLoadtext = findViewById(R.id.textloadForLoading);
+        this.mLoading = findViewById(R.id.loadingHorizontals);
+        this.mloadingCircular = findViewById(R.id.loadingCircularbox);
+        this.mBoxLoading = findViewById(R.id.boxLoadingBorderWhite);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomLoadingbar);
         String mtext = a.getString(R.styleable.CustomLoadingbar_loadingText);
