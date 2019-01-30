@@ -7,5 +7,6 @@
         <attr name="loadingBarColor" format="reference|color" />
         <attr name="isboxLoading" format="boolean" />
         <attr name="isloadingCircular" format="boolean" />
+        <attr name="isLoadingText" format="boolean" />
     </declare-styleable>
 </resources>

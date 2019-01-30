@@ -24,7 +24,7 @@ allprojects {
 	
 Add the dependency
 
-`implementation 'com.github.vantuan88291:CustomLoadingBar:2.0.1'`
+`implementation 'com.github.vantuan88291:CustomLoadingBar:2.0.2'`
 
 ### Usage
 - Just add in your code, set visibility to hide and show the Customloadingbar
@@ -36,6 +36,7 @@ Add the dependency
         app:loadingText="Loading ..."
         app:isboxLoading="true"
         app:isloadingCircular="false"
+        app:isLoadingText="true"
         app:loadingBarColor="@color/colorAccent"
         app:loadingTextColor="@color/colorPrimary" />
 ```
@@ -50,3 +51,4 @@ Add the dependency
 | app:loadingBarColor | color of the loading bar |
 | app:loadingTextColor | color of the text|
 | app:isloadingCircular | boolean to show Circular or Horizontal loading|
+| app:isLoadingText | boolean to show loading text or not|

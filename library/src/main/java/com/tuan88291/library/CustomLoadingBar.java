@@ -45,7 +45,7 @@ public class CustomLoadingBar extends RelativeLayout {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-    private void setUpView(Context context, AttributeSet attrs){
+    private void setUpView(Context context, AttributeSet attrs) {
         LayoutInflater.from(context).inflate(R.layout.custom_loading_bar_multi_progesss, this, true);
         this.mLoadtext = findViewById(R.id.textloadForLoading);
         this.mLoading = findViewById(R.id.loadingHorizontals);
@@ -56,18 +56,24 @@ public class CustomLoadingBar extends RelativeLayout {
         String mtext = a.getString(R.styleable.CustomLoadingbar_loadingText);
         boolean mcheckBox = a.getBoolean(R.styleable.CustomLoadingbar_isboxLoading, false);
         boolean mcheckBoxCircular = a.getBoolean(R.styleable.CustomLoadingbar_isloadingCircular, false);
+        boolean mcheckLoadingText = a.getBoolean(R.styleable.CustomLoadingbar_isLoadingText, false);
         this.mLoadtext.setTextColor(a.getColor(R.styleable.CustomLoadingbar_loadingTextColor, ContextCompat.getColor(context, R.color.colorAccent)));
 
-        if(mcheckBox){
+        if (mcheckLoadingText) {
+            this.mLoadtext.setVisibility(VISIBLE);
+        } else {
+            this.mLoadtext.setVisibility(GONE);
+        }
+        if (mcheckBox) {
             mBoxLoading.setBackgroundResource(R.drawable.cicrlecornor);
-        }else{
+        } else {
             mBoxLoading.setBackgroundColor(Color.TRANSPARENT);
         }
 
-        if (mcheckBoxCircular){
+        if (mcheckBoxCircular) {
             mLoading.setVisibility(GONE);
             mloadingCircular.setVisibility(VISIBLE);
-        }else{
+        } else {
             mLoading.setVisibility(VISIBLE);
             mloadingCircular.setVisibility(GONE);
         }
@@ -80,11 +86,10 @@ public class CustomLoadingBar extends RelativeLayout {
         setTextLoading(mtext);
 
 
-
     }
 
-    private void setTextLoading(String text){
-        if (text != null){
+    private void setTextLoading(String text) {
+        if (text != null) {
             this.mLoadtext.setText(text);
         }
     }
